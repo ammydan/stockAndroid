@@ -14,7 +14,7 @@ git clone https://github.com/ammydan/stockAndroid.git
 This app has been designed and implemented in a Pixel 2XL emulator by using SDK API 29. It is highly recommended that you use the same virtual device and API to ensure consistency
 
 #### Sample
-![](https://dpassests.oss-cn-shanghai.aliyuncs.com/index.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/index_2.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/search.PNG)
+![](https://dpassests.oss-cn-shanghai.aliyuncs.com/index_2.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/index_2.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/search.PNG)
  
 ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/searchauto.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/detail_loading.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/details_index2.PNG)
 ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/details_index.PNG)  ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/details_trade.PNG) ![](https://dpassests.oss-cn-shanghai.aliyuncs.com/details_tradeS.PNG)
