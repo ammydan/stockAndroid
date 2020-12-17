@@ -49,7 +49,6 @@ public class ItemMoveCallback extends ItemTouchHelper.Callback{
         if(target.getClass() != viewHolder.getClass())return false;
         int fromPostion = viewHolder.getAdapterPosition();
         int toPosition = target.getAdapterPosition();
-        Log.i("Home", "from:"+fromPostion+", to:"+toPosition);
         if(viewHolder instanceof PortfolioSection.PortfolioViewHolder){
             portfolioSection.onRowMoved(fromPostion, toPosition);
         }else if(viewHolder instanceof  FavoriteSection.FavoriteViewHolder){

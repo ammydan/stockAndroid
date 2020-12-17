@@ -2,17 +2,23 @@
     <!-- Base application theme. -->
     <style name="Theme.StockappAdroid" parent="Theme.MaterialComponents.DayNight">
         <item name="colorAccent">@color/black</item>
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorOnSurface">@color/black</item>
+        <item name="colorPrimary">@color/launcherBG</item>
+<!--        <item name="colorOnSurface">@color/black</item>-->
         <item name="editTextColor">@android:color/black</item>
         <item name="actionBarStyle">@style/searchBar</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/launcherBG</item>
     </style>
 
     <style name ="searchBar" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="titleTextStyle">@style/mytitleStyle</item>
         <item name="editTextColor">@color/black</item>
         <item name="titleTextColor">@color/black</item>
         <item name="iconTint">@color/black</item>
+    </style>
+
+    <style name="mytitleStyle" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
     </style>
 
 

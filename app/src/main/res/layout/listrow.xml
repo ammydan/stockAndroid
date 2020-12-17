@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/launcherBG">
 
     <TextView
         android:id="@+id/ticker"
-        android:layout_width="59dp"
+        android:layout_width="wrap_content"
         android:layout_height="17dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -21,14 +22,13 @@
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="65dp"
+        android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginStart="240dp"
         android:text="1583.23"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/ticker"
+        app:layout_constraintEnd_toStartOf="@+id/detail"
         app:layout_constraintTop_toTopOf="@+id/ticker" />
 
     <ImageView
@@ -38,8 +38,6 @@
         android:layout_marginEnd="4dp"
         android:contentDescription="details"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/price"
         app:layout_constraintTop_toTopOf="@+id/price"
         app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
@@ -48,7 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
         android:text="5 shares"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ticker"
         app:layout_constraintTop_toBottomOf="@+id/ticker" />
 
@@ -57,7 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
         android:text="475.6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/price"
         app:layout_constraintTop_toBottomOf="@+id/price" />
 
@@ -65,18 +67,20 @@
         android:id="@+id/down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="go down"
-        app:layout_constraintStart_toStartOf="@+id/price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/change"
         app:layout_constraintTop_toBottomOf="@+id/price"
         app:srcCompat="@drawable/ic_baseline_trending_down_24" />
 
     <ImageView
-        android:id="@+id/up"
+        android:id="@+id/thisup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/price"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/change"
         app:layout_constraintTop_toBottomOf="@+id/price"
         app:srcCompat="@drawable/ic_twotone_trending_up_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

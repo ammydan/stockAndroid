@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="launcherBG">#F2F2F4</color>
     <color name="mtrl_textinput_default_box_stroke_color">#FF000000</color>
+    <color name="buttonColor">#329A5D</color>
+    <color name="sourceColor">#797979</color>
 </resources>
